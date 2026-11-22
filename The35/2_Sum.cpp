@@ -91,21 +91,3 @@ public:
         return {-1};
     }
 };
-
-
-int main() {
-    Solution sol;
-
-    vector<int> nums = {2, 7, 11, 15};
-    int target = 100;
-
-    vector<int> result = sol.twoSum(nums, target);
-
-    if (result[0] != -1) {
-        cout << "Indexes: [" << result[0] << ", " << result[1] << "]" << endl;
-    } else {
-        cout << -1 << endl; // Prints -1 when no numbers sum to target
-    }
-
-    return 0;
-}
